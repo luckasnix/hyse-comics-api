@@ -1,3 +1,40 @@
+type Comic {
+  id: ID!
+  structure: String!
+  orientation: String!
+  direction: String!
+  genres: [String!]!
+  title: String!
+  synopsis: String!
+  thumbnailUrl: String!
+  coverUrl: String!
+  chapters: [Chapter!]!
+}
+
+type Chapter {
+  id: ID!
+  comicId: ID!
+  title: String!
+  synopsis: String!
+  comic: Comic!
+  pages: [Page!]!
+}
+
+type Page {
+  id: ID!
+  chapterId: ID!
+  imageUrl: String!
+  imageWidth: Int!
+  imageHeight: Int!
+  backgroundTexture: String
+  chapter: Chapter!
+}
+
 type Query {
-  message: String
+  comics: [Comic!]!
+  comic(id: ID!): Comic
+  chapters: [Chapter!]!
+  chapter(id: ID!): Chapter
+  pages: [Page!]!
+  page(id: ID!): Page
 }
