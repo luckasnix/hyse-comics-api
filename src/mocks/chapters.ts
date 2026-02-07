@@ -1,4 +1,4 @@
-import type { Chapter } from "../types/chapters.ts";
+import type { Chapter } from "#/types/chapters.ts";
 
 export const chaptersMock: Array<Chapter> = [
   {

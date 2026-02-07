@@ -1,5 +1,5 @@
-import { chaptersMock } from "../mocks/chapters.ts";
-import type { Chapter } from "../types/chapters.ts";
+import { chaptersMock } from "#/mocks/chapters.ts";
+import type { Chapter } from "#/types/chapters.ts";
 
 export class ChaptersService {
   private chapters: Array<Chapter> = chaptersMock;

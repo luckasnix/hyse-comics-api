@@ -1,4 +1,4 @@
-import type { Comic } from "../types/comics.ts";
+import type { Comic } from "#/types/comics.ts";
 
 export const comicsMock: Array<Comic> = [
   {

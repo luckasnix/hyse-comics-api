@@ -1,4 +1,4 @@
-import type { Page } from "../types/pages.ts";
+import type { Page } from "#/types/pages.ts";
 
 export const pagesMock: Array<Page> = [
   {

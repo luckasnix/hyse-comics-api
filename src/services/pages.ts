@@ -1,5 +1,5 @@
-import { pagesMock } from "../mocks/pages.ts";
-import type { Page } from "../types/pages.ts";
+import { pagesMock } from "#/mocks/pages.ts";
+import type { Page } from "#/types/pages.ts";
 
 export class PagesService {
   private pages: Array<Page> = pagesMock;

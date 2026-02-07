@@ -1,5 +1,5 @@
-import { comicsMock } from "../mocks/comics.ts";
-import type { Comic } from "../types/comics.ts";
+import { comicsMock } from "#/mocks/comics.ts";
+import type { Comic } from "#/types/comics.ts";
 
 export class ComicsService {
   private comics: Array<Comic> = comicsMock;
