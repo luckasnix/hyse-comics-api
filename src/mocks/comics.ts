@@ -2,7 +2,7 @@ import type { Comic } from "#/types/comics.ts";
 
 export const comicsMock: Array<Comic> = [
   {
-    id: "iXSE",
+    id: "QhbGUrW2",
     structure: "single-panel",
     orientation: "landscape",
     direction: "eastern",
@@ -16,7 +16,7 @@ export const comicsMock: Array<Comic> = [
       "https://ncruxkkvlxobsrzmvbkz.supabase.co/storage/v1/object/public/comics/metaverse-cavalry/cv.webp",
   },
   {
-    id: "erZ7",
+    id: "LPLc5tsY",
     structure: "single-panel",
     orientation: "landscape",
     direction: "western",
@@ -30,7 +30,7 @@ export const comicsMock: Array<Comic> = [
       "https://ncruxkkvlxobsrzmvbkz.supabase.co/storage/v1/object/public/comics/forbidden-treasures/cv.webp",
   },
   {
-    id: "FSOK",
+    id: "iEdqrCrJ",
     structure: "single-panel",
     orientation: "landscape",
     direction: "western",
@@ -44,7 +44,7 @@ export const comicsMock: Array<Comic> = [
       "https://ncruxkkvlxobsrzmvbkz.supabase.co/storage/v1/object/public/comics/skate-champion/cv.webp",
   },
   {
-    id: "lfUQ",
+    id: "t7uzBpFU",
     structure: "single-panel",
     orientation: "landscape",
     direction: "eastern",
@@ -58,7 +58,7 @@ export const comicsMock: Array<Comic> = [
       "https://ncruxkkvlxobsrzmvbkz.supabase.co/storage/v1/object/public/comics/blood-and-gold/cv.webp",
   },
   {
-    id: "tAip",
+    id: "9eaVmAst",
     structure: "single-panel",
     orientation: "landscape",
     direction: "western",
@@ -72,7 +72,7 @@ export const comicsMock: Array<Comic> = [
       "https://ncruxkkvlxobsrzmvbkz.supabase.co/storage/v1/object/public/comics/apprentice-of-witchcraft/cv.webp",
   },
   {
-    id: "LAeD",
+    id: "4ShLAvTY",
     structure: "single-panel",
     orientation: "landscape",
     direction: "western",
