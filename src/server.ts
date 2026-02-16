@@ -2,6 +2,7 @@ import { createYoga } from "graphql-yoga";
 
 import { schema } from "./schema.ts";
 
+const port = Number(Deno.env.get("PORT") ?? 4000);
 const allowedOrigins = Deno.env.get("ALLOWED_ORIGINS")?.split(",") ?? [];
 
 const yoga = createYoga({
@@ -14,6 +15,6 @@ const yoga = createYoga({
 });
 
 Deno.serve(
-  { port: 4000, hostname: "127.0.0.1" },
+  { port },
   yoga,
 );
