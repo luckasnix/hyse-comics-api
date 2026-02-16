@@ -30,6 +30,12 @@ type Page {
   chapter: Chapter!
 }
 
+type Recommendation {
+  id: ID!
+  title: String!
+  chapters: [Chapter!]!
+}
+
 type Query {
   comics: [Comic!]!
   comic(id: ID!): Comic
@@ -37,4 +43,6 @@ type Query {
   chapter(id: ID!): Chapter
   pages: [Page!]!
   page(id: ID!): Page
+  recommendations: [Recommendation!]!
+  recommendation(id: ID!): Recommendation
 }

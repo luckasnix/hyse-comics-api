@@ -3,6 +3,7 @@ import { createSchema } from "graphql-yoga";
 import { chaptersService } from "./services/chapters.ts";
 import { comicsService } from "./services/comics.ts";
 import { pagesService } from "./services/pages.ts";
+import { recommendationsService } from "./services/recommendations.ts";
 import typeDefs from "./type-defs.gql" with { type: "text" };
 
 export const schema = createSchema({
@@ -16,6 +17,9 @@ export const schema = createSchema({
         chaptersService.getChapterById(id),
       pages: () => pagesService.getAllPages(),
       page: (_, { id }: { id: string }) => pagesService.getPageById(id),
+      recommendations: () => recommendationsService.getAllRecommendations(),
+      recommendation: (_, { id }: { id: string }) =>
+        recommendationsService.getRecommendationById(id),
     },
     Comic: {
       chapters: (parent: { id: string }) =>
@@ -30,6 +34,12 @@ export const schema = createSchema({
     Page: {
       chapter: (parent: { chapterId: string }) =>
         chaptersService.getChapterById(parent.chapterId),
+    },
+    Recommendation: {
+      chapters: (parent: { chapterIds: Array<string> }) =>
+        parent.chapterIds
+          .map((id) => chaptersService.getChapterById(id))
+          .filter(Boolean),
     },
   },
 });
